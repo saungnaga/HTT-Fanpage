@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Excalifont';
+    src: url('./assets/Excalifont-Regular.woff2') format('truetype');
+}
+
+body {
+    height: 100vh;
+    font-family: "Excalifont", sans-serif;
+}
