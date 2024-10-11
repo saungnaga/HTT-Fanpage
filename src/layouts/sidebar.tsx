@@ -21,81 +21,101 @@ import tonchan from "../assets/tonchan.png";
 
 function Sidebar() {
   return (
-    <nav className="mt-2 flex flex-col gap-6 p-2">
+    <nav className="mt-2 flex flex-col gap-6 p-2 sticky left-0 top-20">
       <div className="flex flex-col gap-6 sm:hidden bg-red-100 bg-opacity-50 w-28 rounded-xl">
-        <Button
-          text="Home"
-          defaultImage={yui1}
-          hoverImage={yui2}
-          variant={"yui"}
-          size={"medium"}
-        />
-        <Button
-          text="Music"
-          defaultImage={mio1}
-          hoverImage={mio2}
-          variant={"mio"}
-          size={"small"}
-        />
-        <Button
-          text="Media"
-          defaultImage={ritsu1}
-          hoverImage={ritsu2}
-          variant={"ritsu"}
-          size={"medium"}
-        />
-        <Button
-          text="Shop"
-          defaultImage={azusa1}
-          hoverImage={azusa2}
-          variant={"azusa"}
-          size={"medium"}
-        />
-        <Button
-          text="Lounge"
-          defaultImage={mugi1}
-          hoverImage={mugi2}
-          variant={"mugi"}
-          size={"medium"}
-        />
+        <a href="/">
+          <Button
+            text="Home"
+            defaultImage={yui1}
+            hoverImage={yui2}
+            variant={"yui"}
+            size={"medium"}
+          />
+        </a>
+        <a href="/music">
+          <Button
+            text="Music"
+            defaultImage={mio1}
+            hoverImage={mio2}
+            variant={"mio"}
+            size={"small"}
+          />
+        </a>
+        <a href="/media">
+          <Button
+            text="Media"
+            defaultImage={ritsu1}
+            hoverImage={ritsu2}
+            variant={"ritsu"}
+            size={"medium"}
+          />
+        </a>
+        <a href="/shop">
+          <Button
+            text="Shop"
+            defaultImage={azusa1}
+            hoverImage={azusa2}
+            variant={"azusa"}
+            size={"medium"}
+          />
+        </a>
+        <a href="/lounge">
+          <Button
+            text="Lounge"
+            defaultImage={mugi1}
+            hoverImage={mugi2}
+            variant={"mugi"}
+            size={"medium"}
+          />
+        </a>
       </div>
       <div className="flex flex-col gap-6 w-28 rounded-xl">
-          <Button
-            text="Votes"
-            defaultImage={nodoka1}
-            hoverImage={nodoka2}
-            variant={"nodoka"}
-            size={"medium"}
-          />
-          <Button
-            text="Memes"
-            defaultImage={jun1}
-            hoverImage={jun2}
-            variant={"jun"}
-            size={"medium"}
-          />
-          <Button
-            text="Support"
-            variant={"ui"}
-            size={"medium"}
-            defaultImage={ui1}
-            hoverImage={ui2}
-          />
-          <Button
-            text="Credits"
-            variant={"sawako"}
-            defaultImage={sawako1}
-            hoverImage={sawako2}
-            size={"medium"}
-          />
+          <a href="/votes">
+            <Button
+              text="Votes"
+              defaultImage={nodoka1}
+              hoverImage={nodoka2}
+              variant={"nodoka"}
+              size={"medium"}
+            />
+          </a>
+          <a href="/memes">
+            <Button
+              text="Memes"
+              defaultImage={jun1}
+              hoverImage={jun2}
+              variant={"jun"}
+              size={"medium"}
+            />
+          </a>
+          <a href="/support">
+            <Button
+              text="Support"
+              variant={"ui"}
+              size={"medium"}
+              defaultImage={ui1}
+              hoverImage={ui2}
+            />
+          </a>
+          <a href="/credits">
+            <Button
+              text="Credits"
+              variant={"sawako"}
+              defaultImage={sawako1}
+              hoverImage={sawako2}
+              size={"medium"}
+            />
+          </a>
       </div>
       <div className="mx-auto">
-          <button className="mx-auto border-t-2 px-2 hover:scale-150">
-            <img src={tonchan} alt="" className="w-16" />
-            <div className="-mt-6">
-              Games
-            </div>
-          </button>
+          <a href="/games">
+            <button className="mx-auto border-t-2 px-2 hover:scale-150">
+              <img src={tonchan} alt="" className="w-16" />
+              <div className="-mt-6">
+                Games
+              </div>
+            </button>
+          </a>
       </div>
     </nav>
   );

@@ -23,7 +23,7 @@ function Main() {
         </div>
       </div>
       <div className="border-t-2 mt-4 p-2">
-        Houkago Tea Time (放課後ティータイム), often abbreviated as HTT, is the
+        &nbsp;&nbsp;&nbsp;Houkago Tea Time (放課後ティータイム), often abbreviated as HTT, is the
         main band in the K-ON! series. The name translates into English as
         After-School Tea Time.
       </div>
