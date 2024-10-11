@@ -1,7 +1,7 @@
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
-import ShopMain from "../layouts/shop";
-import ShopCard from "../layouts/shopCard";
+import ShopMain from "../layouts/shopMain";
+import ShopCard from "../components/shopCard";
 import Sidebar from "../layouts/sidebar";
 
 function ShopPage() {
