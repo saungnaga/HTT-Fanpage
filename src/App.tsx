@@ -8,7 +8,6 @@ import Media from "./pages/media";
 import Longue from "./pages/lounge";
 import Votes from "./pages/votes";
 import Credits from "./pages/credits";
-import Memes from "./pages/chords";
 import Games from "./pages/games";
 import Support from "./pages/support";
 import Anime from "./pages/anime";
