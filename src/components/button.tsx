@@ -1,7 +1,7 @@
 import { cva, VariantProps } from "class-variance-authority";
 import React from "react";
 
-const buttonStyles = cva('relative flex items-center transition-all font-bold hover:text-white hover:border-solid hover:border-2 hover:rounded-xl px-1 duration-100', {
+const buttonStyles = cva('relative flex items-center transition-all font-bold hover:text-white hover:border-solid hover:border-2 hover:rounded-xl px-1 duration-100 flex-col sm:flex-row', {
     variants: {
         variant: {
             yui: 'text-red-500 hover:bg-red-500',

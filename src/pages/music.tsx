@@ -1,20 +1,46 @@
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
 import Sidebar from "../layouts/sidebar";
+import MusicHtt from "../layouts/musicHtt";
+import React from "react";
 
 function Music() {
+  type ExpandedSections = {
+    htt: boolean;
+    solo: boolean;
+    devil: boolean;
+    [key: string]: boolean; // Allow any additional string keys
+  };
+
+  const [isExpanded, setIsExpanded] = React.useState<ExpandedSections>({
+    htt: true,
+    solo: false,
+    devil: false,
+  });
+
+  const expandedSection = (section: string) => {
+    setIsExpanded((prevState) => ({
+      ...prevState,
+      [section]: !prevState[section],
+    }));
+  };
+
   return (
     <div className="lg:w-4/5 mx-auto">
       <Header />
-      <div className="flex">
+      <div className="flex ">
         <Sidebar />
-        <iframe
-          className="h-dvh"
-          src="https://open.spotify.com/embed/album/3SJPNJ3dMplHK8UeFy295k?utm_source=generator"
-          width="100%"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
+        <div className="container flex-grow mr-1 min-h-screen sm:p-4">
+          <div>
+            <button
+              className="bg-slate-400 bg-opacity-30 rounded-2xl px-2 w-full text-left hover:bg-opacity-50"
+              onClick={() => expandedSection("htt")}
+            >
+              Houkago Tea Time
+            </button>
+            {isExpanded.htt && <MusicHtt />}
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

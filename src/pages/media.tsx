@@ -9,7 +9,7 @@ function Media() {
       <Header />
       <div className="flex">
         <Sidebar />
-        <div className="flex p-4 gap-4 min-h-screen items-start justify-center flex-grow">
+        <div className="grid grid-cols-auto-fill-media p-4 gap-14 min-h-screen flex-grow">
           <div className="flex justify-center items-center hover:scale-105 transition-all duration-300">
             <div className="bg-[url('https://i.redd.it/ulri50744m5a1.jpg')] bg-cover bg-center rounded-3xl">
               <MediaCard />
@@ -27,6 +27,24 @@ function Media() {
               <MediaCard />
             </div>
             <div className="text-white text-center text-4xl font-bold cursor-pointer absolute">Live<br/>Concert</div>
+          </div>
+          <div className="flex justify-center items-center hover:scale-105 transition-all duration-300">
+            <div className="bg-[url('https://c4.wallpaperflare.com/wallpaper/625/39/749/anime-girls-k-on-nakano-azusa-kotobuki-tsumugi-wallpaper-thumb.jpg')] bg-cover bg-center rounded-3xl">
+              <MediaCard />
+            </div>
+            <div className="text-white text-center text-4xl font-bold cursor-pointer absolute">Photos</div>
+          </div>
+          <div className="flex justify-center items-center hover:scale-105 transition-all duration-300">
+            <div className="bg-[url('https://png.pngitem.com/pimgs/s/301-3013356_k-on-yui-hirasawa-fanart-hd-png-download.png')] bg-cover bg-center rounded-3xl">
+              <MediaCard />
+            </div>
+            <div className="text-white text-center text-4xl font-bold cursor-pointer absolute">Fan Art</div>
+          </div>
+          <div className="flex justify-center items-center hover:scale-105 transition-all duration-300">
+            <div className="bg-[url('https://i.ytimg.com/vi/UR-FDwumz-E/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAxQ_tP8D2gm3dDidFTId-JGrNKxg')] bg-cover bg-center rounded-3xl">
+              <MediaCard />
+            </div>
+            <div className="text-white text-center text-4xl font-bold cursor-pointer absolute">Youtube<br/>Videos</div>
           </div>
         </div>
       </div>

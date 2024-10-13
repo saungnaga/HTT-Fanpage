@@ -12,7 +12,7 @@ function ShopPage() {
         <Sidebar />
         <div className="w-full">
             <ShopMain />
-            <div className="grid grid-cols-auto-fill gap-4 p-2">
+            <div className="grid grid-cols-auto-fill-shop gap-4 p-2">
                 <ShopCard />
                 <ShopCard />
                 <ShopCard />

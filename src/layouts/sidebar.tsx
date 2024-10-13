@@ -21,8 +21,8 @@ import tonchan from "../assets/tonchan.png";
 
 function Sidebar() {
   return (
-    <nav className="mt-2 flex flex-col gap-6 p-2 sticky left-0 top-20">
-      <div className="flex flex-col gap-6 sm:hidden bg-red-100 bg-opacity-50 w-28 rounded-xl">
+    <nav className="mt-2 flex flex-col gap-6 px-auto">
+      <div className="flex flex-col gap-6 sm:w-28 sm:hidden items-center">
         <a href="/">
           <Button
             text="Home"
@@ -69,7 +69,7 @@ function Sidebar() {
           />
         </a>
       </div>
-      <div className="flex flex-col gap-6 w-28 rounded-xl">
+      <div className="flex flex-col gap-6 sm:w-28 rounded-xl items-center sm:items-start">
           <a href="/votes">
             <Button
               text="Votes"
@@ -109,7 +109,7 @@ function Sidebar() {
       </div>
       <div className="mx-auto">
           <a href="/games">
-            <button className="mx-auto border-t-2 px-2 hover:scale-150">
+            <button className="border-t-2  hover:scale-110 w-16 sm:w-auto">
               <img src={tonchan} alt="" className="w-16" />
               <div className="-mt-6">
                 Games
