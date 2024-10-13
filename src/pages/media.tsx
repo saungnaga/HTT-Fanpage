@@ -9,19 +9,19 @@ function Media() {
       <Header />
       <div className="flex">
         <Sidebar />
-        <div className="grid grid-cols-auto-fill-media p-4 gap-14 min-h-screen flex-grow">
+        <div className="grid grid-cols-auto-fill-media p-4 gap-y-4 min-h-screen flex-grow">
           <div className="flex justify-center items-center hover:scale-105 transition-all duration-300">
             <div className="bg-[url('https://i.redd.it/ulri50744m5a1.jpg')] bg-cover bg-center rounded-3xl">
               <MediaCard />
             </div>
             <div className="text-white text-4xl font-bold cursor-pointer absolute">Manga</div>
           </div>
-          <div className="flex justify-center items-center hover:scale-105 transition-all duration-300">
+          <a href="/media/anime" className="flex justify-center items-center hover:scale-105 transition-all duration-300">
             <div className="bg-[url('https://upload.wikimedia.org/wikipedia/id/1/19/K-On%21_DVD_volume_1_cover.jpg')] bg-cover bg-center rounded-3xl">
               <MediaCard />
             </div>
             <div className="text-white text-4xl font-bold cursor-pointer absolute">Anime</div>
-          </div>
+          </a>
           <div className="flex justify-center items-center hover:scale-105 transition-all duration-300">
             <div className="bg-[url('https://m.media-amazon.com/images/I/718zO2G0CDL._AC_UF894,1000_QL80_.jpg')] bg-cover bg-center rounded-3xl">
               <MediaCard />

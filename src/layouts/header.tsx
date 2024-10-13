@@ -24,7 +24,7 @@ const Header = () => {
         </button>
         <div className="sm:hidden font-bold">Houkago Tea Time</div>
         <nav className="sm:flex hidden gap-4">
-          <a href="/">
+          <a href="/home">
             <Button
               text="Home"
               defaultImage={yui1}

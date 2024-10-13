@@ -79,9 +79,9 @@ function Sidebar() {
               size={"medium"}
             />
           </a>
-          <a href="/memes">
+          <a href="/chords">
             <Button
-              text="Memes"
+              text="Chords"
               defaultImage={jun1}
               hoverImage={jun2}
               variant={"jun"}
