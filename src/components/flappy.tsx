@@ -84,7 +84,7 @@ function Flappy() {
   }, [isGameStarted]);
 
   return (
-    <div className="relative h-[500px] w-screen bg-blue-300 overflow-hidden">
+    <div className="relative h-[500px] w-screen bg-blue-300 overflow-hidden rounded-xl">
       {/* Score */}
       <div className="absolute top-5 left-5 text-3xl font-bold text-white flex justify-between w-full pr-16 z-10">
         {score}
