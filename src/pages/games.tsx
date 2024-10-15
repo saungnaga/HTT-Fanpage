@@ -1,3 +1,4 @@
+import Flappy from "../components/flappy.tsx";
 import ComingSoon from "../layouts/comingSoon.tsx";
 import Footer from "../layouts/footer.tsx";
 import Header from "../layouts/header.tsx";
@@ -9,7 +10,7 @@ function Games() {
       <Header />
       <div className="flex">
         <Sidebar />
-        <ComingSoon />
+        <Flappy />
       </div>
       <Footer />
     </div>
