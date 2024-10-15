@@ -85,7 +85,7 @@ const Chords: React.FC = () => {
       <Header />
       <div className="flex">
         <Sidebar />
-        <div className="container flex-grow">
+        <div className="container flex-grow p-20 bg-slate-100 rounded-xl">
           <h1 className="text-2xl font-bold text-center mb-4">
             Fuwa Fuwa Time
           </h1>
