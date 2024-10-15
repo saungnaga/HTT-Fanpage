@@ -1,5 +1,4 @@
 import Flappy from "../components/flappy.tsx";
-import ComingSoon from "../layouts/comingSoon.tsx";
 import Footer from "../layouts/footer.tsx";
 import Header from "../layouts/header.tsx";
 import Sidebar from "../layouts/sidebar.tsx";

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ton from "../assets/Ton_seen_from_the_side.png"
 
 const GRAVITY = 2;
 const JUMP_HEIGHT = 50;
-const PIPE_WIDTH = 50;
+// const PIPE_WIDTH = 50;
 const PIPE_GAP = 150;
 
 interface Pipe {
@@ -57,6 +57,16 @@ function Flappy() {
       return () => clearInterval(interval);
     }
   }, [isGameStarted, pipes]);
+
+  useEffect(() => {
+    if (isGameStarted) {
+      const speedInterval = setInterval(() => {
+        setPipeSpeed((prevSpeed) => prevSpeed + 0.5);  // Gradually increase the speed
+      }, 5000); // Increase the speed every 5 seconds
+  
+      return () => clearInterval(speedInterval);
+    }
+  }, [isGameStarted]);     
 
   // Generate Pipes
   useEffect(() => {
