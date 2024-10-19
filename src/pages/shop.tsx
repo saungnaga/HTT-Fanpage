@@ -17,6 +17,7 @@ function ShopPage() {
                 <ShopCard />
                 <ShopCard />
                 <ShopCard />
+                <ShopCard />
             </div>
         </div>
       </div>

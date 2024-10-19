@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import ton from "../assets/Ton_seen_from_the_side.png"
 
-const GRAVITY = 2;
-const JUMP_HEIGHT = 50;
+const GRAVITY = 3;
+const JUMP_HEIGHT = 70;
 const PIPE_WIDTH = 50;
 const PIPE_GAP = 150;
 

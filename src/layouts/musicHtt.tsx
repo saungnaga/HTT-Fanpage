@@ -8,90 +8,95 @@ import maniac from "../assets/go go maniac.jpg";
 import listen from "../assets/listen.jpg";
 import utauyo from "../assets/utauyo.jpg";
 import thank from "../assets/no thank you.jpg";
-import unmei from "../assets/unmei.jpg";
-import singing from "../assets/singing.jpg";
-import fuwa from "../assets/fuwa fuwa time.jpg";
-import pure from "../assets/pure pure heart.jpg";
 import UI from "../assets/u&i.jpg";
+import Coming from "../components/comingSoonStamp";
 
 function MusicHtt() {
   return (
-    <div>
-      <div className="p-2 grid sm:grid-cols-auto-fill-album grid-cols-auto-fill-albumSmall gap-4 items-start">
+    <div id="" className="p-2 grid sm:grid-cols-auto-fill-album grid-cols-auto-fill-albumSmall gap-4 items-start">
+      <div className="flex justify-center items-center">
         <SongAlbum
           text="Houkago Tea Time"
           year="2009"
           image={album}
           type="album"
         />
+        <Coming />
+      </div>
+      <a href="/music/htt2">
         <SongAlbum
           text="Houkago Tea Time II"
           year="2010"
           image={album1}
           type="album"
         />
+      </a>
+      <div className="flex justify-center items-center">
         <SongAlbum
           text="Houkago Tea Time in Movie"
           year="2012"
           type="album"
           image={movie}
         />
+        <Coming />
+      </div>
+      <div className="flex justify-center items-center">
         <SongAlbum
           text="Cagayake! Girls"
           year="2009"
           type="single"
           image={cagayake}
         />
+        <Coming />
+      </div>
+      <div className="flex justify-center items-center">
         <SongAlbum
           text={'Don\'t Say "Lazy"'}
           year="2009"
           type="single"
           image={lazy}
         />
+        <Coming />
+      </div>
+      <div className="flex justify-center items-center">
         <SongAlbum
           text="Go! Go! Maniac"
           year="2010"
           type="single"
           image={maniac}
         />
+        <Coming />
+      </div>
+      <div className="flex justify-center items-center">
         <SongAlbum text="Listen!!" year="2010" type="single" image={listen} />
+        <Coming />
+      </div>
+      <div className="flex justify-center items-center">
         <SongAlbum
           text="Utauyo!! Miracle"
           year="2010"
           type="single"
           image={utauyo}
         />
+        <Coming />
+      </div>
+      <div className="flex justify-center items-center">
         <SongAlbum
           text="No, Thank You!"
           year="2010"
           type="single"
           image={thank}
         />
-        <div className="hidden sm:flex">
-          <SongAlbum
-            text="Unmei♪wa♪Endless!"
-            year="2011"
-            type="single"
-            image={unmei}
-          />
-        </div>
-        <div className="sm:hidden">
-          <SongAlbum
-            text="Unmei♪wa♪ Endless!"
-            year="2011"
-            type="single"
-            image={unmei}
-          />
-        </div>
-        <SongAlbum text="Singing!" year="2011" type="single" image={singing} />
-        <SongAlbum text="Fuwa Fuwa Time" year="2009" type="EP" image={fuwa} />
-        <SongAlbum text="Pure Pure Heart" year="2010" type="EP" image={pure} />
+        <Coming />
+      </div>
+      <div className="flex justify-center items-center">
         <SongAlbum
           text="Gohan wa Okazu / U & I"
           year="2010"
           type="EP"
           image={UI}
         />
+        <Coming />
       </div>
     </div>
   );
