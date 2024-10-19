@@ -16,8 +16,8 @@ function Music() {
   };
 
   const [isExpanded, setIsExpanded] = React.useState<ExpandedSections>({
-    htt: true,
-    solo: false,
+    htt: false,
+    solo: true,
     devil: false,
   });
 
@@ -34,7 +34,7 @@ function Music() {
       <div className="flex ">
         <Sidebar />
         <div className="container flex-grow mr-1 min-h-screen sm:p-4 ">
-          <a href="">
+          <div>
             <button
               className="bg-slate-400 bg-opacity-30 rounded-2xl px-2 w-full text-left hover:bg-opacity-50 flex justify-between mb-1"
               onClick={() => expandedSection("htt")}
@@ -45,7 +45,7 @@ function Music() {
               </div>
             </button>
             {isExpanded.htt && <MusicHtt />}
-          </a>
+          </div>
           <a href="#solo">
             <button
               className="bg-slate-400 bg-opacity-30 rounded-2xl px-2 w-full text-left hover:bg-opacity-50 flex justify-between mb-1"
