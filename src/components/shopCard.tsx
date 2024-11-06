@@ -42,7 +42,7 @@ const ShopCard: React.FC<ButtonProps> = ({ title, image, price }) => {
           New
         </span>
 
-        <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
+        <h3 className="mt-4 h-12 text-lg font-medium text-gray-900">{title}</h3>
 
         <p className="mt-1.5 text-sm text-gray-700">{price}</p>
 

@@ -51,7 +51,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex flex-col sm:flex-row sm:gap-2">
-        <div>created by</div>
+        <div>developed by</div>
         <a href="https://saungnaga.vercel.app/" target="blank" className="hover:text-blue-400 hover:font-bold">
           Saungnaga
         </a>

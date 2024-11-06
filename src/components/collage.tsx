@@ -6,7 +6,7 @@ interface CollageProps {
 
 const Collage: React.FC<CollageProps> = ({ images }) => {
   return (
-    <div className="grid sm:grid-cols-3 sm:grid-rows-3 grid-cols-2 grid-rows-2 gap-2 p-4">
+    <div className="flex-grow grid grid-cols-auto-fill-album gap-2 p-4">
       {images.map((image, index) => (
         <div
           key={index}

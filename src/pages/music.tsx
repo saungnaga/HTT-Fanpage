@@ -33,43 +33,46 @@ function Music() {
       <Header />
       <div className="flex ">
         <Sidebar />
-        <div className="container flex-grow mr-1 min-h-screen sm:p-4 ">
-          <div>
-            <button
-              className="bg-slate-400 bg-opacity-30 rounded-2xl px-2 w-full text-left hover:bg-opacity-50 flex justify-between mb-1"
-              onClick={() => expandedSection("htt")}
-            >
-              <div>Houkago Tea Time</div>
-              <div className="opacity-50">
-                {isExpanded.htt ? <ChevronUp /> : <ChevronDown />}
-              </div>
-            </button>
-            {isExpanded.htt && <MusicHtt />}
+        <div className="flex flex-col md:flex-row min-h-screen w-full gap-2">
+          <div className="container  mr-1 sm:p-4">
+            <div>
+              <button
+                className="bg-slate-400 bg-opacity-30 rounded-2xl px-2 w-full text-left hover:bg-opacity-50 flex justify-between mb-1"
+                onClick={() => expandedSection("htt")}
+              >
+                <div>Houkago Tea Time</div>
+                <div className="opacity-50">
+                  {isExpanded.htt ? <ChevronUp /> : <ChevronDown />}
+                </div>
+              </button>
+              {isExpanded.htt && <MusicHtt />}
+            </div>
+            <a href="#solo">
+              <button
+                className="bg-slate-400 bg-opacity-30 rounded-2xl px-2 w-full text-left hover:bg-opacity-50 flex justify-between mb-1"
+                onClick={() => expandedSection("solo")}
+              >
+                <div>Solo Album</div>
+                <div className="opacity-50">
+                  {isExpanded.solo ? <ChevronUp /> : <ChevronDown />}
+                </div>
+              </button>
+              {isExpanded.solo && <MusicSolo />}
+            </a>
+            <a href="#DD">
+              <button
+                className="bg-slate-400 bg-opacity-30 rounded-2xl px-2 w-full text-left hover:bg-opacity-50 flex justify-between mb-1"
+                onClick={() => expandedSection("devil")}
+              >
+                <div>Death Devil</div>
+                <div className="opacity-50">
+                  {isExpanded.devil ? <ChevronUp /> : <ChevronDown />}
+                </div>
+              </button>
+              {isExpanded.devil && <MusicDD />}
+            </a>
           </div>
-          <a href="#solo">
-            <button
-              className="bg-slate-400 bg-opacity-30 rounded-2xl px-2 w-full text-left hover:bg-opacity-50 flex justify-between mb-1"
-              onClick={() => expandedSection("solo")}
-            >
-              <div>Solo Album</div>
-              <div className="opacity-50">
-                {isExpanded.solo ? <ChevronUp /> : <ChevronDown />}
-              </div>
-            </button>
-            {isExpanded.solo && <MusicSolo />}
-          </a>
-          <a href="#DD">
-            <button
-              className="bg-slate-400 bg-opacity-30 rounded-2xl px-2 w-full text-left hover:bg-opacity-50 flex justify-between mb-1"
-              onClick={() => expandedSection("devil")}
-            >
-              <div>Death Devil</div>
-              <div className="opacity-50">
-                {isExpanded.devil ? <ChevronUp /> : <ChevronDown />}
-              </div>
-            </button>
-            {isExpanded.devil && <MusicDD />}
-          </a>
+          <iframe className="rounded-xl min-h-screen" src="https://open.spotify.com/embed/playlist/5mQ0cB6LVKnPOQIGVC6BAT?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
       </div>
       <Footer />
